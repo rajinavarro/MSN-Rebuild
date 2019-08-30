@@ -12,34 +12,20 @@ struct Message {
     var user: String!
     var msg: String!
     var userProfile: String!
+    var userStatus: UserStatus!
 }
 
 struct Msgs {
     static func getAllMsgs() -> [Message]{
-        return [Message(user: "Vinicius", msg: "Swift é bom", userProfile: "userIcon"),
-                Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon"),
-                Message(user: "Albert", msg: "Eai, Vamo estudar pro academy", userProfile: "userIcon"),
-                Message(user: "Raji", msg: "OI", userProfile: "userIcon"),
-                Message(user: "Carlos", msg: "Olá", userProfile: "userIcon"),
-                Message(user: "Amigo", msg: "Boa Noite!", userProfile: "userIcon"),
-                Message(user: "Carinha que mora logo ali", msg: "Não tenho um dolar", userProfile: "userIcon"),
-                Message(user: "Mãe", msg: "Cuidado", userProfile: "userIcon"),
-                Message(user: "Pai", msg: "Volte antes das 18h", userProfile: "userIcon"),
-                Message(user: "Mana", msg: "Te odeio", userProfile: "userIcon"),
-                Message(user: "Cesar", msg: "Dê a mim o que é meu", userProfile: "userIcon"),
-                Message(user: "Vinicius", msg: "Swift é bom", userProfile: "userIcon"),
-                Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon"),
-                Message(user: "Albert", msg: "Eai, Vamo estudar pro academy", userProfile: "userIcon"),
-                Message(user: "Raji", msg: "OI", userProfile: "userIcon"),
-                Message(user: "Carlos", msg: "Olá", userProfile: "userIcon"),
-                Message(user: "Amigo", msg: "Boa Noite!", userProfile: "userIcon"),
-                Message(user: "Carinha que mora logo ali", msg: "Não tenho um dolar", userProfile: "userIcon"),
-                Message(user: "Mãe", msg: "Cuidado", userProfile: "userIcon"),
-                Message(user: "Pai", msg: "Volte antes das 18h", userProfile: "userIcon"),
-                Message(user: "Mana", msg: "Te odeio", userProfile: "userIcon"),
-                Message(user: "Cesar", msg: "Dê a mim o que é meu", userProfile: "userIcon")
-                
-                
+        return [Message(user: "Vinicius", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.online),
+                Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.online),
+                Message(user: "Albert", msg: "Eai, Vamo estudar pro academy", userProfile: "userIcon", userStatus: UserStatus.online),
+                Message(user: "Raji", msg: "OI", userProfile: "userIcon", userStatus: UserStatus.offline),
+                Message(user: "Vinicius", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.busy),
+                Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.offline),
+                Message(user: "Albert", msg: "Eai, Vamo estudar pro academy", userProfile: "userIcon", userStatus: UserStatus.online),
+                Message(user: "Raji", msg: "OI", userProfile: "userIcon", userStatus: UserStatus.)
+
         ]
     }
 }

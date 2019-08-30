@@ -8,6 +8,14 @@
 
 import UIKit
 
+
+enum UserStatus: String {
+    case online =  "Online"
+    case offline = "Offline"
+    case busy = "Busy"
+    case unavailable = "Unavailable"
+}
+
 class ChatScreenController: UITableViewController {
     var messages = Msgs.getAllMsgs()
 
@@ -19,6 +27,7 @@ class ChatScreenController: UITableViewController {
 }
 
 extension ChatScreenController {
+   
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
@@ -28,19 +37,36 @@ extension ChatScreenController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
         cell.textLabel?.text = messages[indexPath.row].user
         
-       
         cell.detailTextLabel?.text = messages[indexPath.row].msg
         
-        let image = UIImageView(image: UIImage(named: "greenCircle"))
-        image.frame = CGRect(x: 20, y: 20, width: 20, height: 20)
+        let userStatus = messages[indexPath.row].userStatus
         
-        
-        cell.accessoryView = image
-        
+        setStatus(cell: cell, status: userStatus!)
         
         cell.imageView?.image = UIImage(named: messages[indexPath.row].userProfile)
         
         return cell
+    }
+    
+    fileprivate func setStatus(cell: UITableViewCell, status: UserStatus){
+        switch status {
+        case .online:
+            let image = UIImageView(image: UIImage(named: "greenCircle"))
+            image.frame = CGRect(x: 20, y: 20, width: 20, height: 20)
+            cell.accessoryView = image
+        case .offline:
+            let image = UIImageView(image: UIImage(named: "redCircle"))
+            image.frame = CGRect(x: 20, y: 20, width: 20, height: 20)
+            cell.accessoryView = image
+        case .busy:
+            let image = UIImageView(image: UIImage(named: "yellowCircle"))
+            image.frame = CGRect(x: 20, y: 20, width: 20, height: 20)
+            cell.accessoryView = image
+        default:
+            let image = UIImageView(image: UIImage(named: "redCircle"))
+            image.frame = CGRect(x: 20, y: 20, width: 20, height: 20)
+            cell.accessoryView = image
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

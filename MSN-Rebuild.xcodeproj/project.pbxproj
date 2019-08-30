@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5705456D2315BCED00176C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5705456C2315BCED00176C03 /* AppDelegate.swift */; };
+		5705456F2315BCED00176C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5705456E2315BCED00176C03 /* ViewController.swift */; };
+		570545722315BCED00176C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570545702315BCED00176C03 /* Main.storyboard */; };
+		570545742315BCEF00176C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570545732315BCEF00176C03 /* Assets.xcassets */; };
+		570545772315BCEF00176C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570545752315BCEF00176C03 /* LaunchScreen.storyboard */; };
+		570545822315BCF000176C03 /* MSN_RebuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570545812315BCF000176C03 /* MSN_RebuildTests.swift */; };
+		5705458D2315BCF000176C03 /* MSN_RebuildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5705458C2315BCF000176C03 /* MSN_RebuildUITests.swift */; };
+		5746480C23186A32008BF112 /* Msg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746480B23186A32008BF112 /* Msg.swift */; };
+		5746480E23199D54008BF112 /* BlueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746480D23199D54008BF112 /* BlueController.swift */; };
+		57C71C4823171E2800C075B8 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C71C4723171E2800C075B8 /* ChatScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5705457E2315BCF000176C03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570545612315BCEC00176C03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 570545682315BCED00176C03;
+			remoteInfo = "MSN-Rebuild";
+		};
+		570545892315BCF000176C03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 570545612315BCEC00176C03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 570545682315BCED00176C03;
+			remoteInfo = "MSN-Rebuild";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		570545692315BCED00176C03 /* MSN-Rebuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSN-Rebuild.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5705456C2315BCED00176C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5705456E2315BCED00176C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		570545712315BCED00176C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		570545732315BCEF00176C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		570545762315BCEF00176C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		570545782315BCEF00176C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5705457D2315BCF000176C03 /* MSN-RebuildTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSN-RebuildTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		570545812315BCF000176C03 /* MSN_RebuildTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSN_RebuildTests.swift; sourceTree = "<group>"; };
+		570545832315BCF000176C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		570545882315BCF000176C03 /* MSN-RebuildUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSN-RebuildUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5705458C2315BCF000176C03 /* MSN_RebuildUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSN_RebuildUITests.swift; sourceTree = "<group>"; };
+		5705458E2315BCF000176C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5746480B23186A32008BF112 /* Msg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Msg.swift; sourceTree = "<group>"; };
+		5746480D23199D54008BF112 /* BlueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueController.swift; sourceTree = "<group>"; };
+		57C71C4723171E2800C075B8 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatScreen.swift; path = ../ChatScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		570545662315BCED00176C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5705457A2315BCF000176C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570545852315BCF000176C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		570545602315BCEC00176C03 = {
+			isa = PBXGroup;
+			children = (
+				5705456B2315BCED00176C03 /* MSN-Rebuild */,
+				570545802315BCF000176C03 /* MSN-RebuildTests */,
+				5705458B2315BCF000176C03 /* MSN-RebuildUITests */,
+				5705456A2315BCED00176C03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5705456A2315BCED00176C03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				570545692315BCED00176C03 /* MSN-Rebuild.app */,
+				5705457D2315BCF000176C03 /* MSN-RebuildTests.xctest */,
+				570545882315BCF000176C03 /* MSN-RebuildUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5705456B2315BCED00176C03 /* MSN-Rebuild */ = {
+			isa = PBXGroup;
+			children = (
+				5705456C2315BCED00176C03 /* AppDelegate.swift */,
+				5705456E2315BCED00176C03 /* ViewController.swift */,
+				570545702315BCED00176C03 /* Main.storyboard */,
+				570545732315BCEF00176C03 /* Assets.xcassets */,
+				570545752315BCEF00176C03 /* LaunchScreen.storyboard */,
+				570545782315BCEF00176C03 /* Info.plist */,
+				57C71C4723171E2800C075B8 /* ChatScreen.swift */,
+				5746480B23186A32008BF112 /* Msg.swift */,
+				5746480D23199D54008BF112 /* BlueController.swift */,
+			);
+			path = "MSN-Rebuild";
+			sourceTree = "<group>";
+		};
+		570545802315BCF000176C03 /* MSN-RebuildTests */ = {
+			isa = PBXGroup;
+			children = (
+				570545812315BCF000176C03 /* MSN_RebuildTests.swift */,
+				570545832315BCF000176C03 /* Info.plist */,
+			);
+			path = "MSN-RebuildTests";
+			sourceTree = "<group>";
+		};
+		5705458B2315BCF000176C03 /* MSN-RebuildUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5705458C2315BCF000176C03 /* MSN_RebuildUITests.swift */,
+				5705458E2315BCF000176C03 /* Info.plist */,
+			);
+			path = "MSN-RebuildUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		570545682315BCED00176C03 /* MSN-Rebuild */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570545912315BCF000176C03 /* Build configuration list for PBXNativeTarget "MSN-Rebuild" */;
+			buildPhases = (
+				570545652315BCED00176C03 /* Sources */,
+				570545662315BCED00176C03 /* Frameworks */,
+				570545672315BCED00176C03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MSN-Rebuild";
+			productName = "MSN-Rebuild";
+			productReference = 570545692315BCED00176C03 /* MSN-Rebuild.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5705457C2315BCF000176C03 /* MSN-RebuildTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570545942315BCF000176C03 /* Build configuration list for PBXNativeTarget "MSN-RebuildTests" */;
+			buildPhases = (
+				570545792315BCF000176C03 /* Sources */,
+				5705457A2315BCF000176C03 /* Frameworks */,
+				5705457B2315BCF000176C03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5705457F2315BCF000176C03 /* PBXTargetDependency */,
+			);
+			name = "MSN-RebuildTests";
+			productName = "MSN-RebuildTests";
+			productReference = 5705457D2315BCF000176C03 /* MSN-RebuildTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		570545872315BCF000176C03 /* MSN-RebuildUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570545972315BCF000176C03 /* Build configuration list for PBXNativeTarget "MSN-RebuildUITests" */;
+			buildPhases = (
+				570545842315BCF000176C03 /* Sources */,
+				570545852315BCF000176C03 /* Frameworks */,
+				570545862315BCF000176C03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5705458A2315BCF000176C03 /* PBXTargetDependency */,
+			);
+			name = "MSN-RebuildUITests";
+			productName = "MSN-RebuildUITests";
+			productReference = 570545882315BCF000176C03 /* MSN-RebuildUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		570545612315BCEC00176C03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Albert;
+				TargetAttributes = {
+					570545682315BCED00176C03 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					5705457C2315BCF000176C03 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 570545682315BCED00176C03;
+					};
+					570545872315BCF000176C03 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 570545682315BCED00176C03;
+					};
+				};
+			};
+			buildConfigurationList = 570545642315BCEC00176C03 /* Build configuration list for PBXProject "MSN-Rebuild" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 570545602315BCEC00176C03;
+			productRefGroup = 5705456A2315BCED00176C03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				570545682315BCED00176C03 /* MSN-Rebuild */,
+				5705457C2315BCF000176C03 /* MSN-RebuildTests */,
+				570545872315BCF000176C03 /* MSN-RebuildUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		570545672315BCED00176C03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570545772315BCEF00176C03 /* LaunchScreen.storyboard in Resources */,
+				570545742315BCEF00176C03 /* Assets.xcassets in Resources */,
+				570545722315BCED00176C03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5705457B2315BCF000176C03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570545862315BCF000176C03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		570545652315BCED00176C03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5705456F2315BCED00176C03 /* ViewController.swift in Sources */,
+				57C71C4823171E2800C075B8 /* ChatScreen.swift in Sources */,
+				5746480E23199D54008BF112 /* BlueController.swift in Sources */,
+				5705456D2315BCED00176C03 /* AppDelegate.swift in Sources */,
+				5746480C23186A32008BF112 /* Msg.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570545792315BCF000176C03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570545822315BCF000176C03 /* MSN_RebuildTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570545842315BCF000176C03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5705458D2315BCF000176C03 /* MSN_RebuildUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5705457F2315BCF000176C03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 570545682315BCED00176C03 /* MSN-Rebuild */;
+			targetProxy = 5705457E2315BCF000176C03 /* PBXContainerItemProxy */;
+		};
+		5705458A2315BCF000176C03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 570545682315BCED00176C03 /* MSN-Rebuild */;
+			targetProxy = 570545892315BCF000176C03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		570545702315BCED00176C03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				570545712315BCED00176C03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		570545752315BCEF00176C03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				570545762315BCEF00176C03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5705458F2315BCF000176C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		570545902315BCF000176C03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		570545922315BCF000176C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSN-Rebuild/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn.MSN-Rebuild";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		570545932315BCF000176C03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSN-Rebuild/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn.MSN-Rebuild";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		570545952315BCF000176C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSN-RebuildTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn.MSN-RebuildTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSN-Rebuild.app/MSN-Rebuild";
+			};
+			name = Debug;
+		};
+		570545962315BCF000176C03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSN-RebuildTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn.MSN-RebuildTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSN-Rebuild.app/MSN-Rebuild";
+			};
+			name = Release;
+		};
+		570545982315BCF000176C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSN-RebuildUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn.MSN-RebuildUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MSN-Rebuild";
+			};
+			name = Debug;
+		};
+		570545992315BCF000176C03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MSN-RebuildUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.msn.MSN-RebuildUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MSN-Rebuild";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		570545642315BCEC00176C03 /* Build configuration list for PBXProject "MSN-Rebuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5705458F2315BCF000176C03 /* Debug */,
+				570545902315BCF000176C03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570545912315BCF000176C03 /* Build configuration list for PBXNativeTarget "MSN-Rebuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570545922315BCF000176C03 /* Debug */,
+				570545932315BCF000176C03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570545942315BCF000176C03 /* Build configuration list for PBXNativeTarget "MSN-RebuildTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570545952315BCF000176C03 /* Debug */,
+				570545962315BCF000176C03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570545972315BCF000176C03 /* Build configuration list for PBXNativeTarget "MSN-RebuildUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570545982315BCF000176C03 /* Debug */,
+				570545992315BCF000176C03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 570545612315BCEC00176C03 /* Project object */;
+}

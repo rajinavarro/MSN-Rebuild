@@ -16,24 +16,35 @@ enum UserStatus: String {
     case unavailable = "Unavailable"
 }
 
-class ChatScreenController: UITableViewController {
+class ChatScreenController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var messages = Msgs.getAllMsgs()
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let user = messages[0].user else {return}
         navigationItem.title = "Chats"
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
+        
     }
 }
 
 extension ChatScreenController {
    
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
         cell.textLabel?.text = messages[indexPath.row].user
         
@@ -42,9 +53,13 @@ extension ChatScreenController {
         let userStatus = messages[indexPath.row].userStatus
         
         setStatus(cell: cell, status: userStatus!)
-        
-        cell.imageView?.image = UIImage(named: messages[indexPath.row].userProfile)
-        
+        let image = UIImage(named: messages[indexPath.row].userProfile)
+        if let imageView = cell.imageView {
+            imageView.image = image
+            imageView.layer.cornerRadius = 30
+            imageView.layer.masksToBounds = true
+            imageView.clipsToBounds = true
+        }
         return cell
     }
     
@@ -69,10 +84,12 @@ extension ChatScreenController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Tap na view")
-        self.navigationController?.pushViewController(BlueController(), animated: true)
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        ConversationScreen.user = messages[indexPath.row].user
+        let destination = ConversationScreen()
+        destination.selectedUser = indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
+        
     }
 }
 

@@ -8,6 +8,10 @@
 
 import UIKit
 
+var usuarios = ["raji": 123,
+                "albert": 321]
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -29,6 +33,8 @@ class ViewController: UIViewController {
     @IBOutlet var createAccountButton: UIButton!
     
     @IBOutlet var usernameInputText: UITextField!
+   
+    
     @IBOutlet var passwordInputText: UITextField!
     
     @IBOutlet var username: UILabel!
@@ -41,4 +47,5 @@ class ViewController: UIViewController {
     @IBAction func createAccountButton(_ sender: UIButton) {
     }
 }
+
 

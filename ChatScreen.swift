@@ -18,6 +18,9 @@ enum UserStatus: String {
 
 class ChatScreenController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var messages = Msgs.getAllMsgs()
+    
+    var user: String?
+    var userMessage: [Message]?
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,8 +32,19 @@ class ChatScreenController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
-        
+    }
+    
+    //    MARK: É UMA GAMBIARRA
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ConversationScreen {
+            vc.user = user
+            vc.messages = userMessage
+        }
     }
 }
 
@@ -46,6 +60,7 @@ extension ChatScreenController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+    
         cell.textLabel?.text = messages[indexPath.row].user
         
         cell.detailTextLabel?.text = messages[indexPath.row].msg
@@ -54,6 +69,7 @@ extension ChatScreenController {
         
         setStatus(cell: cell, status: userStatus!)
         let image = UIImage(named: messages[indexPath.row].userProfile)
+        
         if let imageView = cell.imageView {
             imageView.image = image
             imageView.layer.cornerRadius = 30
@@ -85,12 +101,14 @@ extension ChatScreenController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        ConversationScreen.user = messages[indexPath.row].user
-        let destination = ConversationScreen()
-        destination.selectedUser = indexPath.row
-        performSegue(withIdentifier: "segue", sender: self)
+        user = messages[indexPath.row].user
+        userMessage = messages.filter { (message) -> Bool in
+            return message.user == user
+        }
         
+        performSegue(withIdentifier: "segue", sender: self)
     }
+    
 }
 
 

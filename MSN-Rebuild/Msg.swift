@@ -25,14 +25,14 @@ struct Msgs {
                 Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.offline),
                 Message(user: "Albert", msg: "Eai, Vamo estudar pro academy", userProfile: "userIcon", userStatus: UserStatus.online),
                 Message(user: "Raji", msg: "OI", userProfile: "userIcon", userStatus: UserStatus.busy),
-            Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.online),
-            Message(user: "Albert", msg: "Eai, Vamo estudar pro academy", userProfile: "userIcon", userStatus: UserStatus.online),
-            Message(user: "Raji", msg: "OI", userProfile: "userIcon", userStatus: UserStatus.offline),
-            Message(user: "Vinicius", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.busy),
-            Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.offline),
-            Message(user: "Albert", msg: "Eai, Vamo estudar pro academy", userProfile: "userIcon", userStatus: UserStatus.online),
-            Message(user: "Raji", msg: "OI", userProfile: "userIcon", userStatus: UserStatus.busy)
+                Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.online),
+                Message(user: "Albert", msg: "Eai, Vamo estudar pro academykkkkkk", userProfile: "userIcon", userStatus: UserStatus.online),
+                Message(user: "Raji", msg: "OI", userProfile: "userIcon", userStatus: UserStatus.offline),
+                Message(user: "Vinicius", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.busy),
+                Message(user: "Elias", msg: "Swift é bom", userProfile: "userIcon", userStatus: UserStatus.offline),
+                Message(user: "Albert", msg: "Eai, Vamo estudar pro academydaskdaoskdaoskdosakdokadsokdoaksda", userProfile: "userIcon", userStatus: UserStatus.online),
+                Message(user: "Raji", msg: "OI", userProfile: "userIcon", userStatus: UserStatus.busy)
 
-        ]
+            ]
     }
 }

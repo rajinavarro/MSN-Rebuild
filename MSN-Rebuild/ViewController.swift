@@ -8,11 +8,13 @@
 
 import UIKit
 
-var usuarios = ["raji": 123,
-                "albert": 321]
+var users = ["raji": "123",
+                "albert": "321"]
 
+var counter = 0
 
 class ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +47,29 @@ class ViewController: UIViewController {
 
     
     @IBAction func createAccountButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func signInButton(_ sender: UIButton) {
+        for (username, password) in users{
+            if(username == usernameInputText.text && password == passwordInputText.text){
+                counter += 1
+            }
+        }
+        if (counter == 1){
+            print("Login realizado com sucesso!")
+            performSegue(withIdentifier: "signInSegue", sender: self)
+        } else{
+            usernameInputText.layer.borderWidth = 1
+            usernameInputText.layer.borderColor = UIColor.red.cgColor
+            passwordInputText.layer.borderWidth = 1
+            passwordInputText.layer.borderColor = UIColor.red.cgColor
+            let alert = UIAlertController.init(title: "Oops!", message: "Usuario ou Senha incorretos", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            print("Usuario ou senha inválidos")
+        }
     }
 }
 

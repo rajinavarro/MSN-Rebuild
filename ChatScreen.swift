@@ -72,7 +72,9 @@ extension ChatScreenController {
         
         if let imageView = cell.imageView {
             imageView.image = image
-            imageView.layer.cornerRadius = 30
+            imageView.layer.cornerRadius = 35
+            imageView.layer.borderWidth = 4
+            imageView.layer.borderColor = UIColor.white.cgColor
             imageView.layer.masksToBounds = true
             imageView.clipsToBounds = true
         }

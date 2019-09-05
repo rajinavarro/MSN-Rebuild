@@ -13,10 +13,10 @@
 		570545772315BCEF00176C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570545752315BCEF00176C03 /* LaunchScreen.storyboard */; };
 		570545822315BCF000176C03 /* MSN_RebuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570545812315BCF000176C03 /* MSN_RebuildTests.swift */; };
 		5705458D2315BCF000176C03 /* MSN_RebuildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5705458C2315BCF000176C03 /* MSN_RebuildUITests.swift */; };
+		57458B28232195C600207B5D /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458B26232195C600207B5D /* ChatScreen.swift */; };
+		57458B2A2321970900207B5D /* ConversationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57458B292321970900207B5D /* ConversationScreen.swift */; };
+		57458B2C2321978D00207B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57458B2B2321978D00207B5D /* Assets.xcassets */; };
 		5746480C23186A32008BF112 /* Msg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5746480B23186A32008BF112 /* Msg.swift */; };
-		576FA860231D8309002BF115 /* ConversationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FA85F231D8309002BF115 /* ConversationScreen.swift */; };
-		57C0E03C232038EE0003A9E8 /* ConversationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0E03B232038ED0003A9E8 /* ConversationScreen.swift */; };
-		57C71C4823171E2800C075B8 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C71C4723171E2800C075B8 /* ChatScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +49,10 @@
 		570545882315BCF000176C03 /* MSN-RebuildUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSN-RebuildUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5705458C2315BCF000176C03 /* MSN_RebuildUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSN_RebuildUITests.swift; sourceTree = "<group>"; };
 		5705458E2315BCF000176C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57458B26232195C600207B5D /* ChatScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		57458B292321970900207B5D /* ConversationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationScreen.swift; sourceTree = "<group>"; };
+		57458B2B2321978D00207B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5746480B23186A32008BF112 /* Msg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Msg.swift; sourceTree = "<group>"; };
-		576FA85F231D8309002BF115 /* ConversationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationScreen.swift; path = ../../../../../../Downloads/ConversationScreen.swift; sourceTree = "<group>"; };
-		57C0E03B232038ED0003A9E8 /* ConversationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationScreen.swift; sourceTree = "<group>"; };
-		57C71C4723171E2800C075B8 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatScreen.swift; path = ../ChatScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 				570545802315BCF000176C03 /* MSN-RebuildTests */,
 				5705458B2315BCF000176C03 /* MSN-RebuildUITests */,
 				5705456A2315BCED00176C03 /* Products */,
-				57C0E03B232038ED0003A9E8 /* ConversationScreen.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,10 +107,11 @@
 				5705456E2315BCED00176C03 /* ViewController.swift */,
 				570545702315BCED00176C03 /* Main.storyboard */,
 				570545752315BCEF00176C03 /* LaunchScreen.storyboard */,
+				57458B2B2321978D00207B5D /* Assets.xcassets */,
+				57458B26232195C600207B5D /* ChatScreen.swift */,
+				57458B292321970900207B5D /* ConversationScreen.swift */,
 				570545782315BCEF00176C03 /* Info.plist */,
-				57C71C4723171E2800C075B8 /* ChatScreen.swift */,
 				5746480B23186A32008BF112 /* Msg.swift */,
-				576FA85F231D8309002BF115 /* ConversationScreen.swift */,
 			);
 			path = "MSN-Rebuild";
 			sourceTree = "<group>";
@@ -239,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				570545772315BCEF00176C03 /* LaunchScreen.storyboard in Resources */,
+				57458B2C2321978D00207B5D /* Assets.xcassets in Resources */,
 				570545722315BCED00176C03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5705456F2315BCED00176C03 /* ViewController.swift in Sources */,
-				57C71C4823171E2800C075B8 /* ChatScreen.swift in Sources */,
+				57458B28232195C600207B5D /* ChatScreen.swift in Sources */,
 				5705456D2315BCED00176C03 /* AppDelegate.swift in Sources */,
-				576FA860231D8309002BF115 /* ConversationScreen.swift in Sources */,
-				57C0E03C232038EE0003A9E8 /* ConversationScreen.swift in Sources */,
+				57458B2A2321970900207B5D /* ConversationScreen.swift in Sources */,
 				5746480C23186A32008BF112 /* Msg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

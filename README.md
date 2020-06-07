@@ -21,3 +21,8 @@ Ready!
 
 ## Conversation and Chat
 ![alt image](https://raw.githubusercontent.com/AlbertQueiroz/MSN-Rebuild/master/Previews/Preview2.png)
+
+## Contributors
+[Raji Navarro](https://github.com/rajinavarro)</br>
+[Lucas Torres](https://github.com/lucastorress)</br>
+[Albert Queiroz](https://github.com/AlbertQueiroz)
